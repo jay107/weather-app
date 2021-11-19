@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(120deg, #03fcf8, #9403fc);
+    
+    color: white;
+}
+
+.location, .temp{
+    height: 30vh;
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.location h1{
+    font-size: 40px;
+}
+
+.temp{
+    flex-direction: column;
+}
+
+.degree-section{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.degree-section span{
+    margin: 10px;
+    font-size: 30px;
+}
+
+.degree-section h2{
+    font-size: 40px;
+}
+
+.temp .temp-description{
+    font-size: 25px;
+}
+
+.temp-f{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.search-value{
+    display: none;
+}
+
+.search input, .search button{
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: white;
+    transition: all 0.3s linear;
+}
+.search button{
+    background: #80aff7;
+    color: white;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background: white;
+    color: #619df7;
+}
+
+@media only screen and (max-width: 600px){
+    .location h1{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    .location h1{
+        font-size: 20px;
+    }
+}
